@@ -363,7 +363,7 @@ get_pte(pde_t *pgdir, uintptr_t la, bool create) {
     if((*pdep & PTE_P)==0)
      {
       struct Page *page;
-      if(creat==1)
+      if(create==1)
       {
        page=alloc_pages(1);
       }
